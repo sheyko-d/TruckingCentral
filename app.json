@@ -1,21 +1,30 @@
 {
   "expo": {
-    "name": "truckingcentral",
-    "description": "This project is really great.",
-    "slug": "truckingcentral",
+    "name": "TruckingCentral",
+    "description": "The easiest way to find loads and get paid.",
+    "slug": "TruckingCentral",
     "privacy": "public",
     "sdkVersion": "24.0.0",
     "platforms": ["ios", "android"],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+    "primaryColor": "#f26522",
+    "icon": "./assets/icons/app-icon.png",
+    "androidStatusBarColor": "#202933",
+    "loading": {
+      "backgroundColor": "#202933",
+      "icon": "./assets/icons/empty_icon.png",
+      "hideExponentText": true,
+    },
+    "packagerOpts": {
+      "assetExts": ["ttf", "mp4"]
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.channel40.react"
+    },
+    "android": {
+      "package": "com.channel40.react"
     }
   }
 }
